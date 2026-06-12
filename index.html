@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratama Mandiri - Showroom Mobil Terpercaya</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-pm">PM</span>
+      <div>
+        <div class="logo-name" id="site-name">Pratama Mandiri</div>
+        <div class="logo-sub">Car Showroom</div>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="showroom.html" class="btn-showroom">Lihat Showroom</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+  <div class="nav-mobile" id="mobileMenu">
+    <a href="#tentang" onclick="toggleMenu()">Tentang</a>
+    <a href="#layanan" onclick="toggleMenu()">Layanan</a>
+    <a href="#kontak" onclick="toggleMenu()">Kontak</a>
+    <a href="showroom.html" class="btn-showroom-mobile">Lihat Showroom →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-bg"></div>
+  <div class="hero-bg2"></div>
+  <div class="hero-stripe"></div>
+  <div class="hero-stripe2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge animate-fadein" style="animation-delay:0.15s">⚡ Dipercaya sejak 2010</div>
+      <h1 class="hero-title animate-fadein" style="animation-delay:0.3s">
+        <span id="hero_title">Temukan Mobil Impian Anda</span>
+      </h1>
+      <p class="hero-desc animate-fadein" id="hero_desc" style="animation-delay:0.5s">Pratama Mandiri hadir dengan ratusan pilihan kendaraan berkualitas, harga transparan, dan pelayanan terbaik untuk Anda.</p>
+      <div class="hero-actions animate-fadein" style="animation-delay:0.65s">
+        <a href="showroom.html" class="btn-primary ripple-btn">Lihat Showroom →</a>
+        <a href="#tentang" class="btn-ghost">Tentang Kami</a>
+      </div>
+      <div class="hero-stats animate-fadein" style="animation-delay:0.85s">
+        <div class="stat"><span class="stat-num counter" data-target="500" data-suffix="+">0+</span><span class="stat-label">Unit Terjual</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num counter" data-target="13" data-suffix="+">0+</span><span class="stat-label">Tahun Pengalaman</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num counter" data-target="98" data-suffix="%">0%</span><span class="stat-label">Pelanggan Puas</span></div>
+      </div>
+    </div>
+    <div class="hero-visual animate-floatin">
+      <div class="floating-card">
+        <div class="car-card-img">🚗</div>
+        <div class="car-card-name">Unit Pilihan Tersedia</div>
+        <div class="car-card-price">Mulai dari Rp 150 Juta</div>
+        <div class="card-shine"></div>
+      </div>
+      <div class="hero-floating-badge badge-float-1">✓ Bergaransi</div>
+      <div class="hero-floating-badge badge-float-2">🔑 Test Drive</div>
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section class="section" id="tentang">
+  <div class="container">
+    <div class="section-label reveal">Tentang Kami</div>
+    <h2 class="section-title reveal"><span id="about_title">Showroom Mobil</span> <span class="text-accent">Terpercaya</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal reveal-left">
+        <p id="about_desc">Pratama Mandiri adalah showroom mobil yang berdiri sejak tahun 2010. Kami berkomitmen memberikan pengalaman membeli kendaraan yang mudah, transparan, dan menyenangkan.</p>
+        <p>Dengan tim profesional berpengalaman dan koleksi kendaraan yang terus diperbarui, kami siap membantu Anda menemukan mobil yang sesuai kebutuhan dan anggaran Anda.</p>
+        <div class="about-badges">
+          <span class="badge">✓ Unit Bergaransi</span>
+          <span class="badge">✓ Harga Transparan</span>
+          <span class="badge">✓ Surat Lengkap</span>
+          <span class="badge">✓ Test Drive Gratis</span>
+        </div>
+      </div>
+      <div class="about-cards reveal reveal-right">
+        <div class="about-card accent-blue">
+          <div class="about-card-icon">🏆</div>
+          <div class="about-card-title">Terpercaya</div>
+          <div class="about-card-desc">Ribuan pelanggan telah mempercayakan kebutuhan kendaraan mereka kepada kami selama lebih dari 13 tahun.</div>
+        </div>
+        <div class="about-card accent-yellow">
+          <div class="about-card-icon">🔍</div>
+          <div class="about-card-title">Inspeksi Ketat</div>
+          <div class="about-card-desc">Setiap unit melalui 50 titik inspeksi sebelum masuk showroom kami. Kualitas terjamin.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section section-alt" id="layanan">
+  <div class="container">
+    <div class="section-label reveal">Layanan Kami</div>
+    <h2 class="section-title reveal">Apa yang Kami <span class="text-accent">Tawarkan</span></h2>
+    <div class="services-grid" id="services-grid">
+      <div class="service-card reveal" style="transition-delay:0.05s"><div class="service-num">01</div><div class="service-icon">🚗</div><h3>Jual Beli Mobil</h3><p>Temukan mobil impian dari koleksi kami yang selalu diperbarui setiap minggu dengan harga terbaik.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.1s"><div class="service-num">02</div><div class="service-icon">📋</div><h3>Pengurusan STNK & BPKB</h3><p>Kami bantu proses administrasi kendaraan Anda hingga tuntas, cepat dan terpercaya.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.15s"><div class="service-num">03</div><div class="service-icon">💳</div><h3>Kredit & Leasing</h3><p>Tersedia berbagai pilihan cicilan dari bank rekanan kami dengan bunga ringan dan proses cepat.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.2s"><div class="service-num">04</div><div class="service-icon">🔧</div><h3>Tukar Tambah</h3><p>Tukar kendaraan lama Anda dengan unit baru. Proses mudah, harga jual terbaik.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.25s"><div class="service-num">05</div><div class="service-icon">🛡️</div><h3>Garansi Mesin</h3><p>Garansi mesin hingga 6 bulan untuk setiap unit yang dibeli di showroom kami.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.3s"><div class="service-num">06</div><div class="service-icon">🚘</div><h3>Test Drive</h3><p>Rasakan sendiri kenyamanan berkendara sebelum memutuskan membeli. Gratis untuk semua unit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CARA BELI -->
+<section class="section steps-section">
+  <div class="container">
+    <div class="section-label reveal">Cara Beli</div>
+    <h2 class="section-title reveal">Mudah & <span class="text-accent">Cepat</span></h2>
+    <div class="steps-grid">
+      <div class="step-card reveal" style="transition-delay:0.05s"><div class="step-num">01</div><div class="step-icon">🔍</div><h3 class="step-title">Pilih Mobil</h3><p class="step-desc">Browsing koleksi mobil kami di halaman Showroom. Filter berdasarkan merek atau harga.</p><div class="step-arrow">→</div></div>
+      <div class="step-card reveal" style="transition-delay:0.12s"><div class="step-num">02</div><div class="step-icon">📞</div><h3 class="step-title">Hubungi Kami</h3><p class="step-desc">Klik tombol Hubungi Kami di halaman mobil yang kamu minati. Tim kami siap membantu.</p><div class="step-arrow">→</div></div>
+      <div class="step-card reveal" style="transition-delay:0.19s"><div class="step-num">03</div><div class="step-icon">🚘</div><h3 class="step-title">Test Drive</h3><p class="step-desc">Datang ke showroom dan rasakan langsung kenyamanan berkendara. Gratis untuk semua unit.</p><div class="step-arrow">→</div></div>
+      <div class="step-card reveal" style="transition-delay:0.26s"><div class="step-num">04</div><div class="step-icon">🤝</div><h3 class="step-title">Deal & Selesai</h3><p class="step-desc">Sepakati harga dan metode pembayaran. Proses dokumen cepat, mobil siap dibawa pulang!</p></div>
+    </div>
+    <div class="steps-cta reveal"><a href="showroom.html" class="btn-primary ripple-btn">Mulai Cari Mobil →</a></div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section" id="kontak">
+  <div class="container">
+    <div class="section-label reveal">Hubungi Kami</div>
+    <h2 class="section-title reveal">Lokasi & <span class="text-accent">Kontak</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-left">
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Alamat</div><div class="contact-value" id="contact_address">Jl. Raya Utama No. 88, Jakarta Selatan</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Telepon</div><div class="contact-value" id="contact_phone">0812-3456-7890</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value" id="contact_email">info@pratamamandiri.com</div></div></div>
+        <div class="contact-item"><div class="contact-icon">🕐</div><div><div class="contact-label">Jam Operasional</div><div class="contact-value" id="contact_hours">Senin – Sabtu: 08.00 – 18.00 WIB</div></div></div>
+        <a href="showroom.html" class="btn-primary ripple-btn" style="margin-top:1.5rem;display:inline-block;">Lihat Koleksi Mobil →</a>
+      </div>
+      <div class="map-placeholder reveal reveal-right">
+        <div class="map-inner">
+          <div class="map-icon pulse-icon">📍</div>
+          <div class="map-text" id="map_name">Pratama Mandiri</div>
+          <div class="map-sub" id="map_address">Jl. Raya Utama No. 88, Jakarta Selatan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-pm">PM</span>
+        <div>
+          <div class="logo-name" style="color:#fff">Pratama Mandiri</div>
+          <div class="logo-sub" style="color:rgba(255,255,255,0.6)">Car Showroom</div>
+          <p class="footer-brand-text">Showroom mobil terpercaya sejak 2010. Kualitas terjamin, harga transparan.</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <div class="footer-links">
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#kontak">Kontak</a>
+          <a href="showroom.html">Showroom</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <div class="footer-links">
+          <a href="#" id="footer_phone">0812-3456-7890</a>
+          <a href="#">Jakarta Selatan</a>
+          <a href="#">Senin–Sabtu 08–18</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Pratama Mandiri. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- config.js HARUS di atas script utama -->
+<script src="config.js"></script>
+<script>
+// ============ LOAD PORTFOLIO FROM SUPABASE ============
+async function loadPortfolio() {
+  try {
+    const data = await dbGetPortfolio();
+
+    // Hero - pakai textContent bukan innerHTML biar tidak bentrok
+    if (data.hero_title) document.getElementById('hero_title').textContent = data.hero_title;
+    if (data.hero_desc) document.getElementById('hero_desc').textContent = data.hero_desc;
+
+    // Tentang
+    if (data.about_title) document.getElementById('about_title').textContent = data.about_title;
+    if (data.about_desc) document.getElementById('about_desc').textContent = data.about_desc;
+
+    // Kontak
+    if (data.contact_address) {
+      document.getElementById('contact_address').textContent = data.contact_address;
+      document.getElementById('map_address').textContent = data.contact_address;
+    }
+    if (data.contact_phone) {
+      document.getElementById('contact_phone').textContent = data.contact_phone;
+      document.getElementById('footer_phone').textContent = data.contact_phone;
+    }
+    if (data.contact_email) document.getElementById('contact_email').textContent = data.contact_email;
+    if (data.contact_hours) document.getElementById('contact_hours').textContent = data.contact_hours;
+
+    // Load theme colors
+    const settings = await dbGetSettings();
+    if (settings.color_primary) document.documentElement.style.setProperty('--blue', settings.color_primary);
+    if (settings.color_accent) document.documentElement.style.setProperty('--yellow', settings.color_accent);
+
+  } catch(e) {
+    console.log('Portfolio load error:', e);
+  }
+}
+
+// ============ NAVBAR ============
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+
+// ============ PARTICLES ============
+(function(){
+  const canvas = document.getElementById('particleCanvas');
+  const ctx = canvas.getContext('2d');
+  function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+  resize(); window.addEventListener('resize', resize);
+  const pts = Array.from({length:70}, () => ({
+    x:Math.random()*canvas.width, y:Math.random()*canvas.height,
+    r:Math.random()*1.8+0.4, dx:(Math.random()-.5)*.5, dy:(Math.random()-.5)*.5,
+    o:Math.random()*.45+.1
+  }));
+  (function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    pts.forEach(p=>{
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(245,197,24,${p.o})`;ctx.fill();
+      p.x+=p.dx;p.y+=p.dy;
+      if(p.x<0||p.x>canvas.width)p.dx*=-1;
+      if(p.y<0||p.y>canvas.height)p.dy*=-1;
+    });requestAnimationFrame(draw);
+  })();
+})();
+
+// ============ COUNTER ============
+function animateCounter(el) {
+  const target=+el.dataset.target, suffix=el.dataset.suffix||'';
+  let cur=0; const inc=target/120;
+  const t=setInterval(()=>{cur=Math.min(cur+inc,target);el.textContent=Math.floor(cur)+suffix;if(cur>=target)clearInterval(t);},16);
+}
+const obs=new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('revealed');obs.unobserve(en.target);}}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+const cObs=new IntersectionObserver(e=>e.forEach(en=>{if(en.isIntersecting){animateCounter(en.target);cObs.unobserve(en.target);}}),{threshold:0.5});
+document.querySelectorAll('.counter').forEach(el=>cObs.observe(el));
+
+// ============ RIPPLE ============
+document.querySelectorAll('.ripple-btn').forEach(btn=>{
+  btn.addEventListener('click',function(e){
+    const r=this.getBoundingClientRect(),rpl=document.createElement('span');
+    rpl.className='ripple';rpl.style.left=(e.clientX-r.left)+'px';rpl.style.top=(e.clientY-r.top)+'px';
+    this.appendChild(rpl);setTimeout(()=>rpl.remove(),600);
+  });
+});
+
+// ============ INIT - tunggu DOM siap lalu load data ============
+document.addEventListener('DOMContentLoaded', () => {
+  loadPortfolio();
+});
+</script>
+</body>
+</html>
