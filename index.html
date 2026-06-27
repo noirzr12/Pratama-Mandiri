@@ -12,7 +12,7 @@
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <div class="nav-logo">
-      <span class="logo-pm">PM</span>
+      <img src="c:\Users\akhda\Downloads\QUALITY IS OUR PRIORITY.png" style="border-radius:50%;background:#F5C518;padding:4px;width:44px;height:44px;object-fit:contain;">
       <div>
         <div class="logo-name" id="site-name">Pratama Mandiri</div>
         <div class="logo-sub">Car Showroom</div>
@@ -164,7 +164,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <span class="logo-pm">PM</span>
+        <img src="c:\Users\akhda\Downloads\QUALITY IS OUR PRIORITY.png" style="border-radius:50%;background:#F5C518;padding:4px;width:44px;height:44px;object-fit:contain;">
         <div>
           <div class="logo-name" style="color:#fff">Pratama Mandiri</div>
           <div class="logo-sub" style="color:rgba(255,255,255,0.6)">Car Showroom</div>
@@ -184,8 +184,8 @@
         <h4>Kontak</h4>
         <div class="footer-links">
           <a href="#" id="footer_phone">0812-3456-7890</a>
-          <a href="#">Jakarta Selatan</a>
-          <a href="#">Senin–Sabtu 08–18</a>
+          <a href="#" id="footer_address">Tangerang Selatan</a>
+          <a href="#" id="footer_hours">Senin–Minggu 08–18</a>
         </div>
       </div>
     </div>
@@ -221,7 +221,10 @@ async function loadPortfolio() {
       document.getElementById('footer_phone').textContent = data.contact_phone;
     }
     if (data.contact_email) document.getElementById('contact_email').textContent = data.contact_email;
-    if (data.contact_hours) document.getElementById('contact_hours').textContent = data.contact_hours;
+    if (data.contact_hours) {
+      document.getElementById('contact_hours').textContent = data.contact_hours;
+      document.getElementById('footer_hours').textContent = data.contact_hours;
+    }
 
     // Load theme colors
     const settings = await dbGetSettings();
